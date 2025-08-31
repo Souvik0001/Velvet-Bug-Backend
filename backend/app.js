@@ -8,7 +8,7 @@ import paymentRouter from "./routes/paymentRoute.js"
 
 // app config
 const app = express()
-const port = process.env.PORT || 4000;
+const PORT = process.env.PORT || 4000;
 
 
 // middlewares
@@ -28,6 +28,6 @@ app.get("/", (req, res) => {
     res.send("API Working")
   });
 
-app.listen(port, () => console.log(`Server started on http://localhost:${port}`))
+app.listen(PORT, () => console.log(`Server started on http://localhost:${PORT}`))
 
 // mongodb+srv://VelvetBug:1L0veBiriy*ni@cluster0.jerusrx.mongodb.net/?
