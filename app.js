@@ -28,6 +28,4 @@ app.get("/", (req, res) => {
     res.send("API Working")
   });
 
-app.listen(PORT, () => console.log(`Server started on http://localhost:${PORT}`))
-
-// mongodb+srv://VelvetBug:1L0veBiriy*ni@cluster0.jerusrx.mongodb.net/?
+app.listen(PORT, "0.0.0.0", () => console.log(`Server started on http://localhost:${PORT}`))
